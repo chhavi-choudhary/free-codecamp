@@ -1,0 +1,19 @@
+let flyMixin=function (obj){
+obj.fly=function(){
+    console.log("Flying, againnnn!!!")
+}
+}
+let bird = {
+    name: "Donald",
+    numLegs: 2
+  };
+  
+  let plane = {
+    model: "777",
+    numPassengers: 524
+  };
+  
+  flyMixin(bird);
+  flyMixin(plane);
+  bird.fly();
+plane.fly()
